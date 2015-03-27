@@ -6,13 +6,13 @@
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
-	<preference name="phonegap-version" value="3.0.0" />
+	<preference name="phonegap-version" value="3.7.0" />
 	<preference name="android-minSdkVersion" value="10" />
 	<preference name="splash-screen-duration" value="1500"/>
 	<preference name="exit-on-suspend" value="true" />
 	<preference name="show-splash-screen-spinner" value="true" />
 	<preference name="permissions" value="none"/>
-<name>Diabetes T2</name>
+	<name>Diabetes T2</name>
 
 <access origin="http://projerdesign.com/clientes/md"/>
 <access uri="http://projerdesign.com/clientes/md" />
@@ -25,19 +25,20 @@ DiabetesT2
 Projer Designs
 </author>
 
-<gap:platform name="android" />
+	<gap:plugin name="nl.x-services.plugins.socialsharing" />
+	<gap:platform name="android" />
+		
+<icon src="icon/android/icon-96-xhdpi.png" />
+<icon src="icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+<icon src="icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+<icon src="icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+<icon src="icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 
-<icon src="icons/android/xhdpi.png" />
-<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
-<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
-<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
-<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-
-<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /> 	
+<gap:splash src="splash/android/screen-xhdpi-portrait.png" />
+<gap:splash src="splash/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="splash/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="splash/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="splash/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" /> 	
 
 	<preference name="android-installLocation" value="auto" />
-
 </widget>
