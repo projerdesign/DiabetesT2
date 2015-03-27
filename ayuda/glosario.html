@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Documento sin título</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link href="../css/simple-sidebar.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" id="menu-toggle" href="#menu-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">UDLAP</a>
+		</div>
+	  </div>
+	</nav>
+	<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="../index.html">¿Qué es la diabetes?</a>
+                </li>
+                <li>
+                    <a href="../que_pasa/index.html">¿Qué pasa en la diabetes mellitus tipo 2?</a>
+                </li>
+                <li>
+                    <a href="../compliaciones/index.html">Complicaciones en la diabetes</a>
+                </li>
+                <li>
+                    <a href="../diagnostico/index.html">Diagnostico</a>
+                </li>
+                <li>
+                    <a href="../tratamiento/index.html">Tratamiento</a>
+                </li>
+                <li>
+                    <a href="../apoyo/index.html">Apoyo Familiar y Grupos de Apoyo</a>
+                </li>
+                <li>
+                    <a href="../autocuidado/index.html">Autocuidado</a>
+                </li>
+				<li class="active">
+                    <a href="index.html">Ayuda</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+			<h1 class="title light-blue">Glosario</h1>
+            <div class="container-fluid">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-2" for="buscador">Buscar:</label>
+					<div class="col-sm-10">
+						<input class="form-control input-lg" name="buscador" id="buscador" type="text" /> 
+					</div>
+				</div>
+			</form>
+                <div class="row" id="glosario">
+					<h3><strong>Insulina:</strong> es una hormona que produce su cuerpo para ayudar a convertir el azúcar proveniente de los alimentos en energía para el organismo.</h3>
+					<h3><strong>Páncreas:</strong> glándula localizada detrás del estómago y por delante de la columna. Produce jugos que ayudan a descomponer los alimentos y hormonas que ayudan a controlar los niveles de azúcar en sangre.</h3>
+					<h3><strong>Enfermedad gastrointestinal:</strong> todas aquellas enfermedades que dañan el sistema digestivo.</h3>
+					<h3><strong>Células:</strong> Estructura más pequeña capaz de realizar por sí misma las tres funciones vitales: nutrición, relación y reproducción.</h3>
+					<h3><strong>Nervios:</strong> conjunto de fibras que conduce impulsos entre el sistema nervioso central y distintas partes del cuerpo.</h3>
+					<h3><strong>Vasos sanguíneos:</strong> Estructura hueca y cilíndrica que conduce la sangre impulsada por la acción del corazón, que recogen la sangre de todos los rincones del cuerpo.</h3>
+					<h3><strong>Enfermedad cardiovascular:</strong> conjunto de entidades que afectan el corazón y los vasos sanguíneos.</h3>
+					<h3><strong>Angina de pecho:</strong> Es un dolor que esta presente cuando el músculo cardiaco no recibe suficiente irrigación sanguínea.</h3>
+					<h3><strong>Infarto agudo al miocardio:</strong> Es provocados por un coágulo que bloquea una de las arterias, las cuales llevan sangre y oxígeno al corazón.</h3>
+					<h3><strong>Enfermedad arterial periférica:</strong> Ocurre cuando existe un estrechamiento de los vasos sanguíneos fuera del corazón.</h3>
+					<h3><strong>Insuficiencia cardíaca congestiva:</strong> Resultado de daño al músculo cardíaco.</h3>
+					<h3><strong>Nefropatía diabética:</strong> Alteraciones en el riñón que se producen en personas con diabetes cuando su control de la glucosa en sangre no ha sido adecuado.</h3>
+					<h3><strong>Retina:</strong> Es una capa de tejido en la parte posterior del ojo que percibe la luz y envía las imágenes al cerebro.</h3>
+					<h3><strong>Retinopatía diabética:</strong> complicación ocular de la diabetes que está causada por el deterioro de los vasos sanguíneos que irrigan la retina.</h3>
+					<h3><strong>Gingivitis:</strong> Inflamación en las encías.</h3> 
+					<h3><strong>Amputación:</strong> perdida de alguna extremidad superior e inferior (brazo, mano, pie, dedos.)</h3>
+					<h3><strong>Poliuria:</strong> expulsión excesiva de orina.</h3>
+					<h3><strong>Polidipsia:</strong> Es el exceso de sed.</h3>
+					<h3><strong>Tira reactiva:</strong> tira de papel tratada químicamente, que se utiliza para el análisis de orina, sangre y de otros líquidos.</h3>
+				</div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+    </script>
+	<script type='text/javascript' >
+    $.expr[':'].icontains = function(obj, index, meta, stack){
+    return (obj.textContent || obj.innerText || jQuery(obj).text() || '').toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
+    };
+    $(document).ready(function(){   
+        $('#buscador').keyup(function(){
+                     buscar = $(this).val();
+                     $('#glosario h3 strong').removeClass('resaltar');
+                            if(jQuery.trim(buscar) != ''){
+                               $("#glosario h3 strong:icontains('" + buscar + "')").addClass('resaltar');
+                            }
+            });
+    });   
+ </script> 
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Documento sin título</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link href="../css/simple-sidebar.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" id="menu-toggle" href="#menu-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">UDLAP</a>
+		</div>
+	  </div>
+	</nav>
+	<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="../index.html">¿Qué es la diabetes?</a>
+                </li>
+                <li>
+                    <a href="../que_pasa/index.html">¿Qué pasa en la diabetes mellitus tipo 2?</a>
+                </li>
+                <li>
+                    <a href="../compliaciones/index.html">Complicaciones en la diabetes</a>
+                </li>
+                <li>
+                    <a href="../diagnostico/index.html">Diagnostico</a>
+                </li>
+                <li>
+                    <a href="../tratamiento/index.html">Tratamiento</a>
+                </li>
+                <li>
+                    <a href="../apoyo/index.html">Apoyo Familiar y Grupos de Apoyo</a>
+                </li>
+                <li>
+                    <a href="../autocuidado/index.html">Autocuidado</a>
+                </li>
+				<li class="active">
+                    <a href="index.html">Ayuda</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+			<h1 class="title light-blue">Ayuda / Información</h1>
+            <div class="container-fluid">
+                <div class="row">
+					<h3>Usted podrá contactar a los estudiantes que realizaron esta aplicación en los siguientes correos electrónicos:</h3>
+					<hr>
+					<h3 class="title">E.L.E. Yarim Arguelles Pérez</h3>
+					<a href="mailto:yarim.arguellespz@udlap.mx" target="_blank"><h3>yarim.arguellespz@udlap.mx</h3></a>
+					<hr>
+					<h3 class="title">E.L.E. Luz Marina Cruz González</h3>
+					<a href="mailto:luz.cruzgs@udlap.mx" target="_blank"><h3>luz.cruzgs@udlap.mx</h3></a>
+					<hr>
+					<h3 class="title">E.L.E. María Concepción Gómez Tlalolini</h3>
+					<a href="mailto:maria.gomezti@udlap.mx" target="_blank"><h3>maria.gomezti@udlap.mx</h3></a>
+					<hr>
+					<h3 class="title">E.L.E. Pedro Eduardo Serrano Rodríguez</h3>
+					<a href="mailto:pedro.serranorl@udlap.mx" target="_blank"><h3>pedro.serranorl@udlap.mx</h3></a>
+					<hr>
+					<form id="send_mail">
+					  <div class="form-group">
+						<label for="nombre">Nombre *:</label>
+						<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ale Colin">
+					  </div>
+					  <div class="form-group">
+						<label for="email">Email *:</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="nombre@example.com">
+					  </div>
+					  <div class="form-group">
+						<label for="mensaje">Mensaje:</label>
+						<textarea class="form-control" rows="3" id="mensaje" name="mensaje"></textarea>
+					  </div>
+					  <div class="form-group">
+						<label for="sender">Enviar a *:</label>
+						<select class="form-control" id="sender" name="sender">
+							<option value="" selected>Selecciona</option>
+							<option value="pedro.serranorl@udlap.mx">E.L.E. Pedro Eduardo Serrano Rodríguez</option>
+							<option value="maria.gomezti@udlap.mx">E.L.E. María Concepción Gómez Tlalolini</option>
+							<option value="luz.cruzgs@udlap.mx">E.L.E. Luz Marina Cruz González</option>
+							<option value="yarim.arguellespz@udlap.mx">E.L.E. Yarim Arguelles Pérez</option>
+							<option value="otapia@projerdesign.com">WebMaster</option>
+						</select>
+					  </div>
+					  <button type="submit" class="btn btn-default">Enviar</button>
+					</form>
+				</div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		$( document ).ready(function() {
+			// Variable to hold request
+			var request;			
+			// Bind to the submit event of our form
+			$("#send_mail").submit(function(event){
+			
+				// Abort any pending request
+				if (request) {
+					request.abort();
+				}
+				// setup some local variables
+				var $form = $(this);
+			
+				// Let's select and cache all the fields
+				var $inputs = $form.find("input, select, button, textarea");
+			
+				// Serialize the data in the form
+				var serializedData = $form.serialize();
+			
+				// Let's disable the inputs for the duration of the Ajax request.
+				// Note: we disable elements AFTER the form data has been serialized.
+				// Disabled form elements will not be serialized.
+				$inputs.prop("disabled", true);
+			
+				// Fire off the request to /form.php
+				request = $.ajax({
+					url: "http://projerdesign.com/clientes/dm/ayuda/send.php",
+					type: "post",
+					data: serializedData
+				});
+			
+				// Callback handler that will be called on success
+				request.done(function (response, textStatus, jqXHR){
+					// Log a message to the console
+					console.log("Enviado");
+				});
+			
+				// Callback handler that will be called on failure
+				request.fail(function (jqXHR, textStatus, errorThrown){
+					// Log the error to the console
+					console.error(
+						"Se ha producido el siguiente error: "+
+						textStatus, errorThrown
+					);
+					//alert("Se ha producido el siguiente error: "+ textStatus, errorThrown)
+				});
+			
+				// Callback handler that will be called regardless
+				// if the request failed or succeeded
+				request.always(function () {
+					// Reenable the inputs
+					$inputs.prop("disabled", false);
+				});
+			
+				// Prevent default posting of form
+				event.preventDefault();
+			});
+		});
+    </script>
+</body>
+</html>

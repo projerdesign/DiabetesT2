@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    	id = "com.projerdesigns.diabetesT2"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+	<preference name="phonegap-version" value="3.0.0" />
+	<preference name="android-minSdkVersion" value="10" />
+	<preference name="splash-screen-duration" value="1500"/>
+	<preference name="exit-on-suspend" value="true" />
+	<preference name="show-splash-screen-spinner" value="true" />
+	<preference name="permissions" value="none"/>
+<name>Diabetes T2</name>
+
+<access origin="http://projerdesign.com/clientes/md"/>
+<access uri="http://projerdesign.com/clientes/md" />
+
+<description>
+DiabetesT2
+</description>
+
+<author href="http://projerdesign.com/" email="otapia@storybox.mx/">
+Projer Designs
+</author>
+
+<gap:platform name="android" />
+
+<icon src="icons/android/xhdpi.png" />
+<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /> 	
+
+	<preference name="android-installLocation" value="auto" />
+
+</widget>

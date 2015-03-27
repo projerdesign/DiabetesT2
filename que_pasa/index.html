@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Documento sin título</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link href="../css/simple-sidebar.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" id="menu-toggle" href="#menu-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">UDLAP</a>
+		</div>
+	  </div>
+	</nav>
+	<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="../index.html">¿Qué es la diabetes?</a>
+                </li>
+                <li class="active">
+                    <a href="#">¿Qué pasa en la diabetes mellitus tipo 2?</a>
+                </li>
+                <li>
+                    <a href="../compliaciones/index.html">Complicaciones en la diabetes</a>
+                </li>
+                <li>
+                    <a href="../diagnostico/index.html">Diagnostico</a>
+                </li>
+                <li>
+                    <a href="../tratamiento/index.html">Tratamiento</a>
+                </li>
+                <li>
+                    <a href="../apoyo/index.html">Apoyo Familiar y Grupos de Apoyo</a>
+                </li>
+                <li>
+                    <a href="../autocuidado/index.html">Autocuidado</a>
+                </li>
+				<li>
+                    <a href="../ayuda/index.html">Ayuda</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+			<h1 class="title light-blue">¿Que pasa en la diabetes mellitus tipo 2?</h1>
+            <div class="container-fluid">
+                <div class="row">
+					<h3 class="col-lg-8">Cuando tienes diabetes tu cuerpo no produce suficiente insulina o la insulina que produce no actúa en forma adecuada, es decir la glucosa no puede entrar a tus células y transformarse en energía, como consecuencia la glucosa se acumula en la sangre.</h3>
+					<hr>
+					<div class="col-lg-4">
+						<img src="../img/d1.jpg" class="img-responsive" alt=""/>
+						<hr>
+					</div>
+					<div class="clearfix"></div>
+					<hr>
+					<div class="col-lg-12">
+						<h2 class="title">Resistencia a la insulina</h2>
+						<h3 class="col-lg-8">Si tu cuerpo no puede utilizar la insulina, la glucosa no puede entrar a las células para convertirse en energía, por lo tanto; para que la glucosa pueda entrar a las células, el páncreas intenta producir más insulina.</h3>
+						<img src="../img/d2.jpg" class="col-lg-4 img-responsive" alt=""/>
+						<div class="clearfix"></div>
+						<hr>
+					</div>
+				</div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+    </script>
+</body>
+</html>

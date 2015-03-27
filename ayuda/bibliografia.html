@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Documento sin título</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link href="../css/simple-sidebar.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" id="menu-toggle" href="#menu-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">UDLAP</a>
+		</div>
+	  </div>
+	</nav>
+	<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="../index.html">¿Qué es la diabetes?</a>
+                </li>
+                <li>
+                    <a href="../que_pasa/index.html">¿Qué pasa en la diabetes mellitus tipo 2?</a>
+                </li>
+                <li>
+                    <a href="../compliaciones/index.html">Complicaciones en la diabetes</a>
+                </li>
+                <li>
+                    <a href="../diagnostico/index.html">Diagnostico</a>
+                </li>
+                <li>
+                    <a href="../tratamiento/index.html">Tratamiento</a>
+                </li>
+                <li>
+                    <a href="../apoyo/index.html">Apoyo Familiar y Grupos de Apoyo</a>
+                </li>
+                <li>
+                    <a href="../autocuidado/index.html">Autocuidado</a>
+                </li>
+				<li class="active">
+                    <a href="index.html">Ayuda</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+			<h1 class="title light-blue">Bibliografía</h1>
+            <div class="container-fluid">
+                <div class="row">
+					<h3>American Diabetes Association. Conexión para la vida. Disponible en:</h3>
+					<a href="http://web.diabetes.org/link/link_for_life_sp/01screen2.swf" target="_blank"><h3>http://web.diabetes.org/link/link_for_life_sp/01screen2.swf</h3></a>
+					<hr>
+					<h3>Chertorivski W, Kuri M, Fajardo D, Rosette V, González R. Manual de procedimiento estandarizados para la vigilancia epidemiológica de la Diabetes Mellitus Tipo 2. Secretaria de salud. (2012). Diponible en: </h3>
+					<a href="http://www.epidemiologia.salud.gob.mx/doctos/infoepid/vig_epid_manuales/10_2012_Manual_DM2_vFinal_31oct12.pdf " target="_blank"><h3>http://www.epidemiologia.salud.gob.mx/doctos/infoepid/vig_epid_manuales/10_2012_Manual_DM2_vFinal_31oct12.pdf</h3></a>
+					<hr>
+					<h3>Federación Internacional de la Diabetes. Atlas de la Diabetes de la FID. 2013. disponible en: </h3>
+					<a href="http://www.idf.org/sites/default/files/SP_6E_Atlas_Full.pdf" target="_blank"><h3>http://www.idf.org/sites/default/files/SP_6E_Atlas_Full.pdf</h3></a>
+					<hr>
+					<h3>Cifuentes R. Yefi Q. La Familia: ¿Apoyo o desaliento para el paciente Diabético?. 2005. Disponible en: </h3>
+					<a href="http://medicina.uach.cl/saludpublica/diplomado/contenido/trabajos/1/Osorno%202005/La_Familia_y_el_paciente_diabetico.pdf" target="_blank"><h3>http://medicina.uach.cl/saludpublica/diplomado/contenido/trabajos/1/Osorno%202005/La_Familia_y_el_paciente_diabetico.pdf</h3></a>
+					<hr>
+					<h3>American Diabetes Association. Alimentos y actividad física. Disponible en:</h3>
+					<a href="http://www.diabetes.org/es/alimentos-y-actividad-fisica/alimentos/planificacion-de-las-comidas/plan-de-alimentacion-para-la.html?loc=ff-es-slabnav
+" target="_blank"><h3>http://www.diabetes.org/es/alimentos-y-actividad-fisica/alimentos/planificacion-de-las-comidas/plan-de-alimentacion-para-la.html?loc=ff-es-slabnav
+</h3></a>
+					<hr>
+				</div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+    </script>
+</body>
+</html>
