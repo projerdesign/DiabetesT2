@@ -16,6 +16,12 @@
 	<script>
 		function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
 	</script>
+	<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	function onDeviceReady() {
+		alert("hol");
+	}</script>
 </head>
 
 <body>

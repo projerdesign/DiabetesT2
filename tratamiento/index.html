@@ -94,44 +94,57 @@
 						<hr>
 					</div>	
 					<!--contenedor-->
-					<div id="contenedor-btn">
-						<ul class="menulist">
-							<li class="col-sm-6 col-md-3 col-lg-3" data-toggle="collapse" href="#btn1" aria-expanded="false" aria-controls="collapseExample"><img src="../img/heart.png" class="img-responsive" alt=""/><hr>Manejo no farmacológico</li>
-							<li class="col-sm-6 col-md-3 col-lg-3" data-toggle="collapse" href="#btn2" aria-expanded="false" aria-controls="collapseExample"><img src="../img/renal.png" class="img-responsive" alt=""/><hr>Manejo farmacológico</li>
-							<li class="col-sm-6 col-md-3 col-lg-3" data-toggle="collapse" href="#btn3" aria-expanded="false" aria-controls="collapseExample"><img src="../img/eye.png" class="img-responsive" alt=""/><hr>Vigilancia de complicaciones</li>
-							<li class="col-sm-6 col-md-3 col-lg-3" data-toggle="collapse" href="#btn4" aria-expanded="false" aria-controls="collapseExample"><img src="../img/brain.png" class="img-responsive" alt=""/><hr>Duración del tratamiento</li>
+					<div id="contenedor-btn" role="tabpanel">
+						<ul class="menulist hidden-xs" role="tablist">
+							<li class="col-sm-6 col-md-3 col-lg-3" role="presentation"><a href="#btn1" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/heart.png" class="img-responsive" alt=""/><hr>Manejo no farmacológico</a></li>
+							<li class="col-sm-6 col-md-3 col-lg-3" role="presentation"><a href="#btn2" aria-controls="btn2" role="tab" data-toggle="tab"><img src="../img/renal.png" class="img-responsive" alt=""/><hr>Manejo farmacológico</a></li>
+							<li class="col-sm-6 col-md-3 col-lg-3" role="presentation"><a href="#btn3" aria-controls="btn3" role="tab" data-toggle="tab"><img src="../img/eye.png" class="img-responsive" alt=""/><hr>Vigilancia de complicaciones</a></li>
+							<li class="col-sm-6 col-md-3 col-lg-3" role="presentation"><a href="#btn4" aria-controls="btn4" role="tab" data-toggle="tab"><img src="../img/brain.png" class="img-responsive" alt=""/><hr>Duración del tratamiento</a></li>
+						</ul>
+						<ul class="menulist visible-xs" role="tablist">
+							<li class="col-xs-6 active" role="presentation"><a href="#btn1" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/heart.png" class="img-responsive" alt=""/><hr>Manejo no farmacológico</a></li>
+							<li class="col-xs-6" role="presentation"><a href="#btn2" aria-controls="btn2" role="tab" data-toggle="tab"><img src="../img/renal.png" class="img-responsive" alt=""/><hr>Manejo farmacológico</a></li>
+						</ul>
+						
+						<div class="clearfix"></div>
+						<div class="tab-content visible-xs">
+						    <div role="tabpanel" class="tab-pane fade clearfix active in" id="btn1">
+							  <div class="well">
+								<h2 class="title text-center">Manejo no farmacológico</h2>
+								<hr>
+								<div class="col-md-12">
+									<h3 class="title">Incluye:</h3>
+									<ul class="big-text">
+										<li class="clearfix"><h3 class="col-xs-6">Control de peso</h3> <img src="../img/control.png" class="col-xs-6" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-6">Plan alimenticio</h3> <img src="../img/plan.png" class="col-xs-6" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-6">Educación del paciente y su familia</h3> <img src="../img/educacion-fam.png" class="col-xs-6" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-6">Auto monitoreo</h3> <img src="../img/monitor.png" class="col-xs-6" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-6">Grupos de ayuda</h3> <img src="../img/grupos.png" class="col-xs-6" alt=""/></li>
+									</ul>
+								</div>
+							  </div>
+							</div>
+						
+							<div role="tabpanel" class="tab-pane fade clearfix" id="btn2">
+							  <div class="well">
+								<h2 class="title text-center">Manejo Farmacológico</h2>
+								<hr>
+								<div class="col-md-8">
+									<h3>Los medicamentos que se utilizan son: sulfonilureas biguanidas, insulina o combinaciones de estos medicamentos.</h3>
+									<h3>Asimismo se pueden utilizar los inhibidores de la alfaglucosidasa, tiazolidinedionas y otros.</h3>
+								</div>
+								<img src="../img/d6.png" class="img-responsive col-md-4" alt=""/>
+							  </div>
+							</div>
+						</div>
+						
+						<ul class="menulist visible-xs" role="tablist">
+							<li class="col-xs-6 active" role="presentation"><a href="#btn3" aria-controls="btn3" role="tab" data-toggle="tab"><img src="../img/eye.png" class="img-responsive" alt=""/><hr>Vigilancia de complicaciones</a></li>
+							<li class="col-xs-6" role="presentation"><a href="#btn4" aria-controls="btn4" role="tab" data-toggle="tab"><img src="../img/brain.png" class="img-responsive" alt=""/><hr>Duración del tratamiento</a></li>
 						</ul>
 						<div class="clearfix"></div>
-						<div class="collapse" id="btn1">
-						  <div class="well">
-							<h2 class="title text-center">Manejo no farmacológico</h2>
-							<hr>
-							<div class="col-md-12">
-								<h3 class="title">Incluye:</h3>
-								<ul class="big-text">
-									<li>Control de peso <img src="../img/brain.png" class="img-responsive" alt=""/></li>
-									<li>Plan alimenticio <img src="../img/brain.png" class="img-responsive" alt=""/></li>
-									<li>Educación del paciente y su familia <img src="../img/brain.png" class="img-responsive" alt=""/></li>
-									<li>Auto monitoreo <img src="../img/brain.png" class="img-responsive" alt=""/></li>
-									<li>Grupos de ayuda <img src="../img/brain.png" class="img-responsive" alt=""/></li>
-								</ul>
-							</div>
-						  </div>
-						</div>
-						
-						<div class="collapse" id="btn2">
-						  <div class="well">
-							<h2 class="title text-center">Manejo Farmacológico</h2>
-							<hr>
-							<div class="col-md-8">
-								<h3>Los medicamentos que se utilizan son: sulfonilureas biguanidas, insulina o combinaciones de estos medicamentos.</h3>
-								<h3>Asimismo se pueden utilizar los inhibidores de la alfaglucosidasa, tiazolidinedionas y otros.</h3>
-							</div>
-							<img src="../img/d6.png" class="img-responsive col-md-4" alt=""/>
-						  </div>
-						</div>
-						
-						<div class="collapse" id="btn3">
+						<div class="tab-content visible-xs">
+							<div role="tabpanel" class="tab-pane fade clearfix active in" id="btn3">
 						  <div class="well">
 							<h2 class="title text-center">Vigilancia de complicaciones</h2>
 							<hr>
@@ -143,14 +156,68 @@
 						  </div>
 						</div>
 						
-						<div class="collapse" id="btn4">
+						<div role="tabpanel" class="tab-pane fade clearfix" id="btn4">
 						  <div class="well">
 							<h2 class="title text-center">Duración del tratamiento</h2>
 							<hr>
 							<div class="col-md-8">
 								<h3>La duración del tratamiento para la diabetes mellitus tipo 2 es <strong>indefinido</strong>, tomando en cuenta el tiempo de diagnosticó  de la enfermedad.</h3>
 							</div>
+							<img src="../img/tratamiento.jpg" class="img-responsive col-md-4" alt=""/>
+						  </div>
+						</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="tab-content hidden-xs">
+						    <div role="tabpanel" class="tab-pane fade clearfix active" id="btn1">
+							  <div class="well">
+								<h2 class="title text-center">Manejo no farmacológico</h2>
+								<hr>
+								<div class="col-md-12">
+									<h3 class="title">Incluye:</h3>
+									<ul class="big-text">
+										<li class="clearfix"><h3 class="col-xs-10">Control de peso</h3> <img src="../img/control.png" class="col-xs-2" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-10">Plan alimenticio</h3> <img src="../img/plan.png" class="col-xs-2" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-10">Educación del paciente y su familia</h3> <img src="../img/educacion-fam.png" class="col-xs-2" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-10">Auto monitoreo</h3> <img src="../img/monitor.png" class="col-xs-2" alt=""/></li>
+										<li class="clearfix"><h3 class="col-xs-10">Grupos de ayuda</h3> <img src="../img/grupos.png" class="col-xs-2" alt=""/></li>
+									</ul>
+								</div>
+							  </div>
+							</div>
+						
+						<div role="tabpanel" class="tab-pane fade clearfix" id="btn2">
+						  <div class="well">
+							<h2 class="title text-center">Manejo Farmacológico</h2>
+							<hr>
+							<div class="col-md-8">
+								<h3>Los medicamentos que se utilizan son: sulfonilureas biguanidas, insulina o combinaciones de estos medicamentos.</h3>
+								<h3>Asimismo se pueden utilizar los inhibidores de la alfaglucosidasa, tiazolidinedionas y otros.</h3>
+							</div>
+							<img src="../img/d6.png" class="img-responsive col-md-4" alt=""/>
+						  </div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade clearfix" id="btn3">
+						  <div class="well">
+							<h2 class="title text-center">Vigilancia de complicaciones</h2>
+							<hr>
+							<div class="col-md-8">
+								<h3>La frecuencia de las consultas depende del interés del paciente, del tratamiento, de los ajustes y de la evolución de la enfermedad.</h3>
+								<h3>La revisión del paciente incluye examen de los ojos, función renal, cardiovascular, estado neurológico  la periodicidad será de acuerdo a cada caso.</h3>
+							</div>
 							<img src="../img/d7.png" class="img-responsive col-md-4" alt=""/>
+						  </div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade clearfix" id="btn4">
+						  <div class="well">
+							<h2 class="title text-center">Duración del tratamiento</h2>
+							<hr>
+							<div class="col-md-8">
+								<h3>La duración del tratamiento para la diabetes mellitus tipo 2 es <strong>indefinido</strong>, tomando en cuenta el tiempo de diagnosticó  de la enfermedad.</h3>
+							</div>
+							<img src="../img/tratamiento.jpg" class="img-responsive col-md-4" alt=""/>
 						  </div>
 						</div>
 						
@@ -158,6 +225,7 @@
 				</div>
             </div>
         </div>
+		</div>
         <!-- /#page-content-wrapper -->
 
     </div>

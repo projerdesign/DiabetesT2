@@ -17,6 +17,8 @@ h2.title{font-weight:300; color:#636363}
 .menulist{font-weight:300; font-size:24px}
 .menulist{padding:0; margin:0}
 .menulist hr{margin:5px 0}
+.menulist a{color:#fff;}
+.menulist a:hover{text-decoration:none}
 .menulist li{list-style-type:none; text-align:center; min-height:150px; padding-top:15px; color:#fff}
 .menulist li:hover, .menulist li.active{text-decoration:underline}
 .menulist li:hover>img{opacity:0.8}
@@ -34,6 +36,29 @@ textarea { resize:vertical; }
 .resaltar{background-color:#FF0;}
 .form-horizontal label{font-size: 30px; text-align: right; padding: 0px 0px; font-weight: 300;} 
 .links a h3{text-overflow: ellipsis; overflow:hidden;}
+.tab-pane h2.title{color: #FFFFFF;background: #009688;padding: 20px 0;}
+.menulist{-webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out;  transition: all 1s ease-in-out;
+}
+.big-text-style li {
+font-size: 24px;
+font-weight: 100;
+list-style-type: square;
+}
+.ejercicios h3.title{background-color: #BDBDBD; padding: 15px; text-align: center; color: #fff; font-size: 30px; margin-bottom:35px}
+.enfermedad h3.title{background-color: #BDBDBD; padding: 10px; color: #fff; font-size: 30px; margin-bottom:35px}
+.enfermedad h3.title strong{padding: 5px 14px; background-color: #009688; margin-left: -10px;}
+.fix-pan{padding: 5px 15px;}
+.menulist .active{background-color: #EEEEEE!important;}
+.menulist .active a{color: #009688!important;}
+.menulist .active hr{border-top: 1px solid #ABA9A9;}
+.tab-pane hr{border-top: 1px solid #DBDBDB;}
+.tab-pane .big-text{padding-left:15px}
+.tab-pane .big-text li{list-style-type:none; border-bottom:solid 1px #AAA9A9; padding:30px 0}
 @media(max-width:768px) {
 	h1.title{margin: -20px -15px 15px -15px;}
+}
+@media(max-width:480px) {
+#contenedor-btn .menulist{font-size: 16px;}
+.tab-pane .big-text{ padding:5px; font-size:16px}
+.tab-pane .big-text h3{font-size:20px}
 }

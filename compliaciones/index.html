@@ -80,68 +80,147 @@
 					</div>
 					<div class="clearfix"></div>
 					<hr>
-					<div id="contenedor-btn">
-						<ul class="menulist">
-							<li class="col-sm-6 col-md-4 col-lg-2" data-toggle="collapse" href="#btn1" aria-expanded="false" aria-controls="collapseExample"><img src="../img/heart.png" class="img-responsive" alt=""/><hr>Enfermedad cardiovascular</li>
-							<li class="col-sm-6 col-md-4 col-lg-2" data-toggle="collapse" href="#btn2" aria-expanded="false" aria-controls="collapseExample"><img src="../img/renal.png" class="img-responsive" alt=""/><hr>Enfermedad renal</li>
-							<li class="col-sm-6 col-md-4 col-lg-2" data-toggle="collapse" href="#btn3" aria-expanded="false" aria-controls="collapseExample"><img src="../img/eye.png" class="img-responsive" alt=""/><hr>Enfermedad en los ojos</li>
-							<li class="col-sm-6 col-md-4 col-lg-2" data-toggle="collapse" href="#btn4" aria-expanded="false" aria-controls="collapseExample"><img src="../img/brain.png" class="img-responsive" alt=""/><hr>Daño en el sistema nervioso</li>
-							<li class="col-sm-6 col-md-4 col-lg-2" data-toggle="collapse" href="#btn5" aria-expanded="false" aria-controls="collapseExample"><img src="../img/oral.png" class="img-responsive" alt=""/><hr>Salud oral</li>
-							<li class="col-sm-6 col-md-4 col-lg-2" data-toggle="collapse" href="#btn6" aria-expanded="false" aria-controls="collapseExample"><img src="../img/feet.png" class="img-responsive" alt=""/><hr>Pie diabético</li>
+					<div id="contenedor-btn" role="tabpanel">
+						<ul class="menulist hidden-xs" role="tablist">
+							<li class="col-xs-6 col-sm-6 col-md-4 col-lg-2" role="presentation"><a href="#btn1" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/heart.png" class="img-responsive" alt=""/><hr>Enfermedad cardiovascular</a></li>
+							<li class="col-xs-6 col-sm-6 col-md-4 col-lg-2" role="presentation"><a href="#btn2" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/renal.png" class="img-responsive" alt=""/><hr>Enfermedad renal</a></li>
+							<li class="col-xs-6 col-sm-6 col-md-4 col-lg-2" role="presentation"><a href="#btn3" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/eye.png" class="img-responsive" alt=""/><hr>Enfermedad en los ojos</a></li>
+							<li class="col-xs-6 col-sm-6 col-md-4 col-lg-2" role="presentation"><a href="#btn4" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/brain.png" class="img-responsive" alt=""/><hr>Daño en el sistema nervioso</a></li>
+							<li class="col-xs-6 col-sm-6 col-md-4 col-lg-2" role="presentation"><a href="#btn5" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/oral.png" class="img-responsive" alt=""/><hr>Salud oral</a></li>
+							<li class="col-xs-6 col-sm-6 col-md-4 col-lg-2" role="presentation"><a href="#btn6" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/feet.png" class="img-responsive" alt=""/><hr>Pie diabético</a></li>
 						</ul>
+						<ul class="menulist visible-xs" role="tablist">
+							<li class="col-xs-6" role="presentation"><a href="#btn1" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/heart.png" class="img-responsive" alt=""/><hr>Enfermedad cardiovascular</a></li>
+							<li class="col-xs-6" role="presentation"><a href="#btn2" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/renal.png" class="img-responsive" alt=""/><hr>Enfermedad renal</a></li>
+						</ul>
+						<div class="visible-xs clearfix"></div>
+						<div class="tab-content visible-xs">
+						    <div role="tabpanel" class="tab-pane fade clearfix active in" id="btn1">
+							  <div class="well">
+								<h2 class="title text-center">Enfermedad cardiovascular</h2>
+								<hr>
+								<h3>Es la causa más común de muerte. Algunas de las enfermedades vasculares que acompañan a la diabetes son la angina de pecho, La enfermedad arterial periférica y la insuficiencia cardíaca congestiva.
+	</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix" id="btn2">
+							  <div class="well">
+								<h2 class="title text-center">Enfermedad renal</h2>
+								<hr>
+								<h3>Es causada por el daño a los pequeños vasos sanguíneos, que puede provocar que los riñones 
+								sean menos eficientes, o que fallen por completo. El mantenimiento de niveles normales de glucosa en sangre y la presión arterial 
+								puede reducir en gran medida el riesgo de nefropatía.</h3>
+							  </div>
+							</div>
+						</div>
+						<ul class="menulist visible-xs" role="tablist">
+							<li class="col-xs-6" role="presentation"><a href="#btn3" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/eye.png" class="img-responsive" alt=""/><hr>Enfermedad en los ojos</a></li>
+							<li class="col-xs-6" role="presentation"><a href="#btn4" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/brain.png" class="img-responsive" alt=""/><hr>Daño en el sistema nervioso</a></li>
+						</ul>
+						
+						<div class="visible-xs clearfix"></div>
+						<div class="tab-content visible-xs">
+							<div role="tabpanel" class="tab-pane fade clearfix active in" id="btn3">
+							  <div class="well">
+								<h2 class="title text-center">Enfermedad de los ojos</h2>
+								<hr>
+								<h3>La red de vasos sanguíneos que irrigan la retina puede bloquearse, lo que lleva a la pérdida permanente de la visión.</h3>
+								<h3>La retinopatía se puede tratar a través de controles regulares de los ojos y manteniendo un control en sangre.</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix" id="btn4">
+							  <div class="well">
+								<h2 class="title text-center">Daño en el sistema nervioso</h2>
+								<hr>
+								<h3>Las zonas más comúnmente afectadas son las extremidades, particularmente los pies.</h3>
+								<h3>Los daños en los nervios de estas zonas se llama neuropatía periférica, y puede conducir al dolor, hormigueo y pérdida de sensibilidad.</h3>
+							  </div>
+							</div>
+						</div>
+						
+						<ul class="menulist visible-xs" role="tablist">
+							<li class="col-xs-6" role="presentation"><a href="#btn5" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/oral.png" class="img-responsive" alt=""/><hr>Salud oral</a></li>
+							<li class="col-xs-6" role="presentation"><a href="#btn6" aria-controls="btn1" role="tab" data-toggle="tab"><img src="../img/feet.png" class="img-responsive" alt=""/><hr>Pie diabético</a></li>
+						</ul>
+						<div class="visible-xs clearfix"></div>
+						<div class="tab-content visible-xs">
+							<div role="tabpanel" class="tab-pane fade clearfix active in" id="btn5">
+							  <div class="well">
+								<h2 class="title text-center">Salud oral</h2>
+								<hr>
+								<h3>Hay un mayor riesgo de inflamación de las encías se llama  (gingivitis).</h3>
+								<h3>La gingivitis, a su vez, es una causa importante de pérdida de dientes y aumenta el riesgo de enfermedades cardiovasculares.</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix" id="btn6">
+							  <div class="well">
+								<h2 class="title text-center">Pie diabético</h2>
+								<hr>
+								<h3>Pueden desarrollar problemas en los pies como consecuencia de
+								los daños en los nervios y los vasos sanguíneos.
+								Estos problemas pueden conducir fácilmente a la infección y ulceras.</h3>
+								<h2 class="text-center">Lo que aumenta el riesgo de amputación.</h2>
+								<blockquote>
+								<h3><strong>Nota:</strong> Las personas con diabetes se enfrentan a un riesgo de amputación que puede ser más de 25 veces superior al de personas sin diabetes.</h3></blockquote>
+							  </div>
+							</div>
+						</div>
+						
 						<div class="clearfix"></div>
-						<div class="collapse" id="btn1">
-						  <div class="well">
-							<h2 class="title text-center">Enfermedad cardiovascular</h2>
-							<hr>
-							<h3>Es la causa más común de muerte. Algunas de las enfermedades vasculares que acompañan a la diabetes son la angina de pecho, La enfermedad arterial periférica y la insuficiencia cardíaca congestiva.
-</h3>
-						  </div>
-						</div>
-						<div class="collapse" id="btn2">
-						  <div class="well">
-							<h2 class="title text-center">Enfermedad renal</h2>
-							<hr>
-							<h3>Es causada por el daño a los pequeños vasos sanguíneos, que puede provocar que los riñones 
-							sean menos eficientes, o que fallen por completo. El mantenimiento de niveles normales de glucosa en sangre y la presión arterial 
-							puede reducir en gran medida el riesgo de nefropatía.</h3>
-						  </div>
-						</div>
-						<div class="collapse" id="btn3">
-						  <div class="well">
-							<h2 class="title text-center">Enfermedad de los ojos</h2>
-							<hr>
-							<h3>La red de vasos sanguíneos que irrigan la retina puede bloquearse, lo que lleva a la pérdida permanente de la visión.</h3>
-							<h3>La retinopatía se puede tratar a través de controles regulares de los ojos y manteniendo un control en sangre.</h3>
-						  </div>
-						</div>
-						<div class="collapse" id="btn4">
-						  <div class="well">
-							<h2 class="title text-center">Daño en el sistema nervioso</h2>
-							<hr>
-							<h3>Las zonas más comúnmente afectadas son las extremidades, particularmente los pies.</h3>
-							<h3>Los daños en los nervios de estas zonas se llama neuropatía periférica, y puede conducir al dolor, hormigueo y pérdida de sensibilidad.</h3>
-						  </div>
-						</div>
-						<div class="collapse" id="btn5">
-						  <div class="well">
-							<h2 class="title text-center">Salud oral</h2>
-							<hr>
-							<h3>Hay un mayor riesgo de inflamación de las encías se llama  (gingivitis).</h3>
-							<h3>La gingivitis, a su vez, es una causa importante de pérdida de dientes y aumenta el riesgo de enfermedades cardiovasculares.</h3>
-						  </div>
-						</div>
-						<div class="collapse" id="btn6">
-						  <div class="well">
-							<h2 class="title text-center">Pie diabético</h2>
-							<hr>
-							<h3>Pueden desarrollar problemas en los pies como consecuencia de
-							los daños en los nervios y los vasos sanguíneos.
-							Estos problemas pueden conducir fácilmente a la infección y ulceras.</h3>
-							<h2 class="text-center">Lo que aumenta el riesgo de amputación.</h2>
-							<blockquote>
-							<h3><strong>Nota:</strong> Las personas con diabetes se enfrentan a un riesgo de amputación que puede ser más de 25 veces superior al de personas sin diabetes.</h3></blockquote>
-						  </div>
+						<div class="tab-content hidden-xs">
+						    <div role="tabpanel" class="tab-pane fade clearfix active" id="btn1">
+							  <div class="well">
+								<h2 class="title text-center">Enfermedad cardiovascular</h2>
+								<hr>
+								<h3>Es la causa más común de muerte. Algunas de las enfermedades vasculares que acompañan a la diabetes son la angina de pecho, La enfermedad arterial periférica y la insuficiencia cardíaca congestiva.
+	</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix active" id="btn2">
+							  <div class="well">
+								<h2 class="title text-center">Enfermedad renal</h2>
+								<hr>
+								<h3>Es causada por el daño a los pequeños vasos sanguíneos, que puede provocar que los riñones 
+								sean menos eficientes, o que fallen por completo. El mantenimiento de niveles normales de glucosa en sangre y la presión arterial 
+								puede reducir en gran medida el riesgo de nefropatía.</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix active" id="btn3">
+							  <div class="well">
+								<h2 class="title text-center">Enfermedad de los ojos</h2>
+								<hr>
+								<h3>La red de vasos sanguíneos que irrigan la retina puede bloquearse, lo que lleva a la pérdida permanente de la visión.</h3>
+								<h3>La retinopatía se puede tratar a través de controles regulares de los ojos y manteniendo un control en sangre.</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix active" id="btn4">
+							  <div class="well">
+								<h2 class="title text-center">Daño en el sistema nervioso</h2>
+								<hr>
+								<h3>Las zonas más comúnmente afectadas son las extremidades, particularmente los pies.</h3>
+								<h3>Los daños en los nervios de estas zonas se llama neuropatía periférica, y puede conducir al dolor, hormigueo y pérdida de sensibilidad.</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix active" id="btn5">
+							  <div class="well">
+								<h2 class="title text-center">Salud oral</h2>
+								<hr>
+								<h3>Hay un mayor riesgo de inflamación de las encías se llama  (gingivitis).</h3>
+								<h3>La gingivitis, a su vez, es una causa importante de pérdida de dientes y aumenta el riesgo de enfermedades cardiovasculares.</h3>
+							  </div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade clearfix active" id="btn6">
+							  <div class="well">
+								<h2 class="title text-center">Pie diabético</h2>
+								<hr>
+								<h3>Pueden desarrollar problemas en los pies como consecuencia de
+								los daños en los nervios y los vasos sanguíneos.
+								Estos problemas pueden conducir fácilmente a la infección y ulceras.</h3>
+								<h2 class="text-center">Lo que aumenta el riesgo de amputación.</h2>
+								<blockquote>
+								<h3><strong>Nota:</strong> Las personas con diabetes se enfrentan a un riesgo de amputación que puede ser más de 25 veces superior al de personas sin diabetes.</h3></blockquote>
+							  </div>
+							</div>
 						</div>
 					</div>
 				</div>
