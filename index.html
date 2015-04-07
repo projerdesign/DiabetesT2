@@ -35,10 +35,24 @@
 		} else {
 		}
 		alert($nuevo);
+		<!--BACKBOOTON-->
+		document.addEventListener("backbutton", function(e){
+			if($.mobile.activePage.is('#homepage')){
+				/* 
+				 Event preventDefault/stopPropagation not required as adding backbutton
+				  listener itself override the default behaviour. Refer below PhoneGap link.
+				*/
+				//e.preventDefault();
+				navigator.app.exitApp();
+			}
+			else {
+				navigator.app.backHistory()
+			}
+		}, false);
 	}</script>
 </head>
 
-<body>
+<body id="homepage">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 		<div class="navbar-header">
