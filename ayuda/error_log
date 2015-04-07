@@ -1,0 +1,7 @@
+[23-Mar-2015 20:12:46 America/Chicago] PHP Warning:  Header may not contain more than a single header, new line detected in /home/projerde/public_html/clientes/dm/ayuda/send.php on line 65
+[23-Mar-2015 20:14:30 America/Chicago] PHP Warning:  Header may not contain more than a single header, new line detected in /home/projerde/public_html/clientes/dm/ayuda/send.php on line 65
+[23-Mar-2015 20:15:46 America/Chicago] PHP Warning:  Header may not contain more than a single header, new line detected in /home/projerde/public_html/clientes/dm/ayuda/send.php on line 65
+[23-Mar-2015 20:17:50 America/Chicago] PHP Warning:  Header may not contain more than a single header, new line detected in /home/projerde/public_html/clientes/dm/ayuda/send.php on line 65
+[23-Mar-2015 20:19:56 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/projerde/public_html/clientes/dm/ayuda/send_user.php:5) in /home/projerde/public_html/clientes/dm/ayuda/send_user.php on line 63
+[23-Mar-2015 20:20:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/projerde/public_html/clientes/dm/ayuda/send_user.php:5) in /home/projerde/public_html/clientes/dm/ayuda/send_user.php on line 63
+[23-Mar-2015 20:22:48 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/projerde/public_html/clientes/dm/ayuda/send_user.php:5) in /home/projerde/public_html/clientes/dm/ayuda/send_user.php on line 63

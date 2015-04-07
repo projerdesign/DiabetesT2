@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Documento sin título</title>
+</head>
+	<script>
+		var phoneModel = device.model;
+		if (typeof(Storage) != "undefined") {
+		// Store
+		$valoractual = localStorage.getItem("open-app");
+		$id_data_base = localStorage.getItem("id_data_base");
+		$device_data_base = localStorage.getItem("device_data_base");
+    	// Retrieve
+    	if($valoractual == null){
+			localStorage.setItem("open-app", "1");
+			localStorage.setItem("device_data_base", $device_data_base);
+			$nuevo = localStorage.getItem("open-app");
+		}else{
+			$nuevo = ++$valoractual;
+			localStorage.setItem("open-app", $nuevo);
+		}
+		
+		} else {
+		}
+		alert($nuevo);
+	</script>
+<body>
+</body>
+</html>

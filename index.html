@@ -20,6 +20,15 @@
 	document.addEventListener("deviceready", onDeviceReady, false);
 	
 	function onDeviceReady() {
+		if (typeof(Storage) != "undefined") {
+		// Store
+		$valoractual = localStorage.getItem("open-app");
+    	// Retrieve
+    	alert( localStorage.getItem("open-app"));
+		localStorage.clickcount = Number(localStorage.clickcount)+1;
+		} else {
+			document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+		}
 		alert("hol");
 	}</script>
 </head>
