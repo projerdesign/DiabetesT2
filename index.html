@@ -20,16 +20,25 @@
 	document.addEventListener("deviceready", onDeviceReady, false);
 	
 	function onDeviceReady() {
+		var phoneModel = device.model;
 		if (typeof(Storage) != "undefined") {
 		// Store
 		$valoractual = localStorage.getItem("open-app");
+		$id_data_base = localStorage.getItem("id_data_base");
+		$device_data_base = localStorage.getItem("device_data_base");
     	// Retrieve
-    	alert( localStorage.getItem("open-app"));
-		localStorage.clickcount = Number(localStorage.clickcount)+1;
-		} else {
-			document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    	if($valoractual == null){
+			localStorage.setItem("open-app", "1");
+			localStorage.setItem("device_data_base", $device_data_base);
+			$nuevo = localStorage.getItem("open-app");
+		}else{
+			$nuevo = ++$valoractual;
+			localStorage.setItem("open-app", $nuevo);
 		}
-		alert("hol");
+		
+		} else {
+		}
+		alert($nuevo);
 	}</script>
 </head>
 
