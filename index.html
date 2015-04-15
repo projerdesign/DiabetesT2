@@ -42,6 +42,7 @@
 		function onBackKeyDown(e) {
 			var menuactive = $("#wrapper").attr("class");
 			if(menuactive == "toggled"){
+				e.preventDefault();
 				$("#wrapper").toggleClass("toggled");
 				}else{
 			e.preventDefault();
@@ -52,6 +53,7 @@
 		
 		function onConfirm(button) {
 			if(button==2){//If User selected No, then we just do nothing
+				e.preventDefault();
 				return;
 			}else{
 				navigator.app.exitApp();// Otherwise we quit the app.

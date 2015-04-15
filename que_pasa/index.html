@@ -26,6 +26,7 @@
 	function onBackKeyDown(e) {
 			var menuactive = $("#wrapper").attr("class");
 			if(menuactive == "toggled"){
+				e.preventDefault();
 				$("#wrapper").toggleClass("toggled");
 				}else{
 				e.preventDefault();
