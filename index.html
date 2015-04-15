@@ -40,9 +40,14 @@
 		document.addEventListener("menubutton", onMenuKeyDown, false);
 		}
 		function onBackKeyDown(e) {
+			var menuactive = $("#wrapper").attr("class");
+			if(menuactive == "toggled"){
+				$("#wrapper").toggleClass("toggled");
+				}else{
 			e.preventDefault();
 			navigator.notification.confirm("Seguro que quieres salir?", onConfirm, "Confirmar", "Sí,No"); 
 			// Prompt the user with the choice
+			}
 		}
 		
 		function onConfirm(button) {
@@ -55,7 +60,6 @@
 		function onMenuKeyDown() {
 		    // Handle the back button
 			$("#wrapper").toggleClass("toggled");
-			alert("OK");
 		}
 	</script>
 </head>
