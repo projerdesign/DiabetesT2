@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="cordova.js"></script>
+	<script src="_cordova.js"></script>
 	<script type="text/javascript" src="js/SocialSharing.js"></script>
 	<script>
 		function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
@@ -37,6 +37,7 @@
 		alert($nuevo);
 		
 		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);
 		}
 		function onBackKeyDown(e) {
 			e.preventDefault();
@@ -51,6 +52,11 @@
 				navigator.app.exitApp();// Otherwise we quit the app.
 			}
 		}
+		function onMenuKeyDown() {
+		    // Handle the back button
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		}
 	</script>
 </head>
 
@@ -64,7 +70,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-		  <a class="navbar-brand" href="#" onclick="openDeviceBrowser ('http://www.udlap.mx/inicio.aspx')">UDLAP</a>
+		  <a class="navbar-brand" href="#" onclick="openDeviceBrowser ('http://www.udlap.mx/inicio.aspx')"><img src="img/udlap_logo.png" width="135" height="50" alt=""/></a>
 		</div>
 	  </div>
 	</nav>
