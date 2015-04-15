@@ -16,6 +16,29 @@
 	<script>
 		function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
 	</script>
+	<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	function onDeviceReady() {
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);
+	}
+	function onBackKeyDown(e) {
+			var menuactive = $("#wrapper").attr("class");
+			if(menuactive == "toggled"){
+				$("#wrapper").toggleClass("toggled");
+				}else{
+				history.go(-1);
+			    navigator.app.backHistory();
+			// Prompt the user with the choice
+			}
+		}
+
+		function onMenuKeyDown() {
+		    // Handle the back button
+			$("#wrapper").toggleClass("toggled");
+		}
+	</script>
 </head>
 
 <body>
