@@ -12,7 +12,7 @@
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../cordova.js"></script>
-	<script type="text/javascript" src="js/SocialSharing.js"></script>
+	<script type="text/javascript" src="../js/SocialSharing.js"></script>
 	<script>
 		function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
 	</script>
@@ -26,10 +26,8 @@
 	function onBackKeyDown(e) {
 			var menuactive = $("#wrapper").attr("class");
 			if(menuactive == "toggled"){
-				e.preventDefault();
 				$("#wrapper").toggleClass("toggled");
 				}else{
-				e.preventDefault();
 				history.go(-1);
 			    navigator.app.backHistory();
 			// Prompt the user with the choice
@@ -38,7 +36,6 @@
 
 		function onMenuKeyDown() {
 		    // Handle the back button
-			e.preventDefault();
 			$("#wrapper").toggleClass("toggled");
 		}
 	</script>
