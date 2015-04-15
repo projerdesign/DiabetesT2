@@ -36,9 +36,20 @@
 		}
 		alert($nuevo);
 		
-		function onBackKeyDown() {
-	    alert("backbtn")
+		document.addEventListener("backbutton", onBackKeyDown, false);
 		}
+		function onBackKeyDown(e) {
+			e.preventDefault();
+			navigator.notification.confirm("Seguro que quieres salir?", onConfirm, "Confirmar", "Sí,No"); 
+			// Prompt the user with the choice
+		}
+		
+		function onConfirm(button) {
+			if(button==2){//If User selected No, then we just do nothing
+				return;
+			}else{
+				navigator.app.exitApp();// Otherwise we quit the app.
+			}
 		}
 	</script>
 </head>

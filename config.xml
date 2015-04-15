@@ -28,6 +28,7 @@ Projer Designs
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.geolocation" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
 	<gap:platform name="android" />
 	
 <icon src="ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
