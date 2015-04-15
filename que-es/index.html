@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>¿Qué es la diabetes? | Diabetes T2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link href="../css/simple-sidebar.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../cordova.js"></script>
+	<script type="text/javascript" src="../js/SocialSharing.js"></script>
+	<script>
+		function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
+	</script>
+	<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	function onDeviceReady() {
+		if (typeof(Storage) != "undefined") {
+		// Store
+		$valoractual = localStorage.getItem("open-app");
+    	// Retrieve
+    	if($valoractual == null){
+			localStorage.setItem("open-app", "1");
+			$nuevo = localStorage.getItem("open-app");
+		}else{
+			$nuevo = ++$valoractual;
+			localStorage.setItem("open-app", $nuevo);
+		}
+		
+		} else {
+		}
+		alert($nuevo);
+		
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);
+		}
+		
+		function onBackKeyDown(e) {
+			var menuactive = $("#wrapper").attr("class");
+			if(menuactive == "toggled"){
+				$("#wrapper").toggleClass("toggled");
+				}else{
+			navigator.notification.confirm("Seguro que quieres salir?", onConfirm, "Confirmar", "Sí,No"); 
+			// Prompt the user with the choice
+			}
+		}
+		
+		function onConfirm(button) {
+			if(button==2){//If User selected No, then we just do nothing
+				return;
+			}else{
+				navigator.app.exitApp();// Otherwise we quit the app.
+			}
+		}
+		function onMenuKeyDown() {
+		    // Handle the back button
+			$("#wrapper").toggleClass("toggled");
+		}
+	</script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" id="menu-toggle" href="#menu-toggle">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#" onclick="openDeviceBrowser ('http://www.udlap.mx/inicio.aspx')"><img src="../img/udlap_logo.png" width="135" height="50" alt=""/></a>
+		</div>
+	  </div>
+	</nav>
+	<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="active">
+                    <a href="#">¿Qué es la diabetes?</a>
+                </li>
+                <li>
+                    <a href="../que_pasa/index.html">¿Qué pasa en la diabetes mellitus tipo 2?</a>
+                </li>
+                <li>
+                    <a href="../compliaciones/index.html">Complicaciones en la diabetes</a>
+                </li>
+                <li>
+                    <a href="../diagnostico/index.html">Diagnostico</a>
+                </li>
+                <li>
+                    <a href="../tratamiento/index.html">Tratamiento</a>
+                </li>
+                <li>
+                    <a href="../apoyo/index.html">Apoyo Familiar y Grupos de Apoyo</a>
+                </li>
+                <li>
+                    <a href="../autocuidado/index.html">Autocuidado</a>
+                </li>
+				<li>
+                    <a href="../ayuda/index.html">Ayuda</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+			<h1 class="title light-blue">¿Qué es la diabetes?</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3>La diabetes es una enfermedad en la que tu cuerpo no produce insulina o no la utiliza adecuadamente.</h3>
+						<hr>
+						<div class="col-lg-4 visible-xs">
+							<img src="../img/insulina.jpg" class="img-responsive" alt=""/>
+							<hr>
+						</div>
+						<h2 class="title">La insulina</h2>
+						<h3>La insulina es una hormona producida por el pÃ¡ncreas que el cuerpo utiliza para transformar los alimentos que consumes en energía que necesitas para tu vida cotidiana.</h3>
+						<hr>
+						<h2 class="title">La glucosa</h2>
+						<h3>Se desplaza por el torrente sanguíneo para llegar a todas las células de tu cuerpo, cuando comes tu páncreas libera insulina, la insulina transporta la glucosa de la sangre a las células de tu cuerpo para que se transforme en  energía</h3>
+                    </div>
+					<div class="col-lg-4 hidden-xs">
+						<img src="../img/insulina.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="clearfix"></div>
+					<hr>
+					<div class="col-lg-12">
+						<h3 class="col-lg-8">La diabetes tipo 2 representa entre el 90 y el 95 % de todos los casos de diabetes y se presenta con mayor frecuencia en personas de la tercera edad.</h3>
+						<img src="../img/tercera-edad.jpg" class="col-lg-4 img-responsive" alt=""/>
+						<div class="clearfix"></div>
+						<hr>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="title text-center">Las personas con diabetes tipo 2 controlan la enfermedad siguiendo una dieta saludable.</h2>
+						<img src="../img/rueda_de_alimentos.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="col-lg-6">
+					<hr class="hidden-lg">
+						<h2 class="title">Factores que descompensan su enfermedad y provocan recaídas</h2>
+						<ul class="big-text">
+							<li>No tomar los medicamentos en los  horarios  indicados.</li>
+							<li>Dejar de tomar alimentos por largos periodos de tiempo.</li>
+							<li>Tener infecciones (respiratorias, gastrointestinales, por heridas, etc.)</li>
+						</ul>
+						<div class="clearfix"></div>
+						<blockquote class="blockquote-reverse">
+							<h3>La diabetes es una enfermedad que no es curable, sin embargo,  el equipo de profesionales de la salud, desarrollan un plan de tratamiento eficaz para mejorar la calidad de vida.</h3>
+						</blockquote>
+					</div>
+				</div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+    </script>
+</body>
+</html>

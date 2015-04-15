@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="iso-8859-1">
-<title>Documento sin tÃ­tulo</title>
+<title>Contacto | Diabetes t2</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -15,6 +15,29 @@
 	<script type="text/javascript" src="js/SocialSharing.js"></script>
 	<script>
 		function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
+	</script>
+	<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	function onDeviceReady() {
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);
+	}
+	function onBackKeyDown(e) {
+			var menuactive = $("#wrapper").attr("class");
+			if(menuactive == "toggled"){
+				$("#wrapper").toggleClass("toggled");
+				}else{
+				history.go(-1);
+			    navigator.app.backHistory();
+			// Prompt the user with the choice
+			}
+		}
+
+		function onMenuKeyDown() {
+		    // Handle the back button
+			$("#wrapper").toggleClass("toggled");
+		}
 	</script>
 </head>
 
@@ -37,10 +60,10 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li>
-                    <a href="../index.html">Â¿QuÃ© es la diabetes?</a>
+                    <a href="../que-es/index.html">¿Qué es la diabetes?</a>
                 </li>
                 <li>
-                    <a href="../que_pasa/index.html">Â¿QuÃ© pasa en la diabetes mellitus tipo 2?</a>
+                    <a href="../que_pasa/index.html">¿Qué pasa en la diabetes mellitus tipo 2?</a>
                 </li>
                 <li>
                     <a href="../compliaciones/index.html">Complicaciones en la diabetes</a>
@@ -66,21 +89,21 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-			<h1 class="title light-blue">Ayuda / InformaciÃ³n</h1>
+			<h1 class="title light-blue">Ayuda / Información³n</h1>
             <div class="container-fluid">
                 <div class="row">
-					<h3>Usted podrÃ¡ contactar a los estudiantes que realizaron esta aplicaciÃ³n en los siguientes correos electrÃ³nicos:</h3>
+					<h3>Usted podrá contactar a los estudiantes que realizaron esta aplicación en los siguientes correos electrónicos:</h3>
 					<hr>
-					<h3 class="title">E.L.E. Yarim Arguelles PÃ©rez</h3>
+					<h3 class="title">E.L.E. Yarim Arguelles Pérez</h3>
 					<a href="#" onclick="openDeviceBrowser ('mailto:yarim.arguellespz@udlap.mx')" target="_blank"><h3>yarim.arguellespz@udlap.mx</h3></a>
 					<hr>
-					<h3 class="title">E.L.E. Luz Marina Cruz GonzÃ¡lez</h3>
+					<h3 class="title">E.L.E. Luz Marina Cruz González</h3>
 					<a href="#" onclick="openDeviceBrowser ('mailto:luz.cruzgs@udlap.mx')" target="_blank"><h3>luz.cruzgs@udlap.mx</h3></a>
 					<hr>
-					<h3 class="title">E.L.E. MarÃ­a ConcepciÃ³n GÃ³mez Tlalolini</h3>
+					<h3 class="title">E.L.E. María Concepción Gómez Tlalolini</h3>
 					<a href="#" onclick="openDeviceBrowser ('mailto:maria.gomezti@udlap.mx')" target="_blank"><h3>maria.gomezti@udlap.mx</h3></a>
 					<hr>
-					<h3 class="title">E.L.E. Pedro Eduardo Serrano RodrÃ­guez</h3>
+					<h3 class="title">E.L.E. Pedro Eduardo Serrano Rodríguez</h3>
 					<a href="#" onclick="openDeviceBrowser ('mailto:pedro.serranorl@udlap.mx')" target="_blank"><h3>pedro.serranorl@udlap.mx</h3></a>
 					<hr>
 					<form id="send_mail">
@@ -100,10 +123,10 @@
 						<label for="sender">Enviar a *:</label>
 						<select class="form-control" id="sender" name="sender">
 							<option value="" selected>Selecciona</option>
-							<option value="pedro.serranorl@udlap.mx">E.L.E. Pedro Eduardo Serrano RodrÃ­guez</option>
-							<option value="maria.gomezti@udlap.mx">E.L.E. MarÃ­a ConcepciÃ³n GÃ³mez Tlalolini</option>
-							<option value="luz.cruzgs@udlap.mx">E.L.E. Luz Marina Cruz GonzÃ¡lez</option>
-							<option value="yarim.arguellespz@udlap.mx">E.L.E. Yarim Arguelles PÃ©rez</option>
+							<option value="pedro.serranorl@udlap.mx">E.L.E. Pedro Eduardo Serrano Rodríguez</option>
+							<option value="maria.gomezti@udlap.mx">E.L.E. María Concepción Gómez Tlalolini</option>
+							<option value="luz.cruzgs@udlap.mx">E.L.E. Luz Marina Cruz González</option>
+							<option value="yarim.arguellespz@udlap.mx">E.L.E. Yarim Arguelles Pérez</option>
 							<option value="otapia@projerdesign.com">WebMaster</option>
 						</select>
 					  </div>

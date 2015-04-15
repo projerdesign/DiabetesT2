@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="iso-8859-1">
-<title>Documento sin título</title>
+<title>Apoyo Familiar y Grupos de Apoyo | Diabetes T2</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -15,6 +15,29 @@
 	<script type="text/javascript" src="js/SocialSharing.js"></script>
 	<script>
 		function openDeviceBrowser (externalLinkToOpen){	window.open(externalLinkToOpen, '_system', 'location=no');}
+	</script>
+	<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	function onDeviceReady() {
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);
+	}
+	function onBackKeyDown(e) {
+			var menuactive = $("#wrapper").attr("class");
+			if(menuactive == "toggled"){
+				$("#wrapper").toggleClass("toggled");
+				}else{
+				history.go(-1);
+			    navigator.app.backHistory();
+			// Prompt the user with the choice
+			}
+		}
+
+		function onMenuKeyDown() {
+		    // Handle the back button
+			$("#wrapper").toggleClass("toggled");
+		}
 	</script>
 </head>
 
@@ -37,7 +60,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li>
-                    <a href="../index.html">¿Qué es la diabetes?</a>
+                    <a href="../que-es/index.html">¿Qué es la diabetes?</a>
                 </li>
                 <li>
                     <a href="../que_pasa/index.html">¿Qué pasa en la diabetes mellitus tipo 2?</a>
