@@ -28,6 +28,7 @@
 			if(menuactive == "toggled"){
 				$("#wrapper").toggleClass("toggled");
 				}else{
+				e.preventDefault();
 				history.go(-1);
 			    navigator.app.backHistory();
 			// Prompt the user with the choice
@@ -36,6 +37,7 @@
 
 		function onMenuKeyDown() {
 		    // Handle the back button
+			e.preventDefault();
 			$("#wrapper").toggleClass("toggled");
 		}
 	</script>
