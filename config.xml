@@ -26,6 +26,7 @@ Projer Designs
 </author>
 
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
+	<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" version="1.2.0" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.geolocation" />
 	<gap:plugin name="org.apache.cordova.dialogs" />
