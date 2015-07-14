@@ -14,10 +14,7 @@
 	<preference name="permissions" value="none"/>
 	<name>Diabetes T2</name>
 
-<access origin="http://projerdesign.com/clientes/md"/>
-<access uri="http://projerdesign.com/clientes/md" />
-<access origin="http://storybox.mx/clientes/md"/>
-<access uri="http://storybox.mx/clientes/md" />
+<access origin="*" />
 
 <description>
 DiabetesT2

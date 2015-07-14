@@ -24,10 +24,8 @@
 			$.ajax({
 				url:   'http://storybox.mx/clientes/md/conect/new.php',
 				type:  'post',
-				beforeSend: function () {
-						$("#resultado").html("Procesando, espere por favor...");
-				},
 				success:  function (data) {
+						alert(data);
 						var iduser = (data);
 						localStorage.setItem("id", iduser);
 						$nuevousr = localStorage.getItem("id");
@@ -43,10 +41,7 @@
 			$.ajax({
 				url:   'http://storybox.mx/clientes/md/conect/update.php',
 				type:  'get',
-				data:{id:id},
-				beforeSend: function () {
-						$("#resultado").html("Procesando, espere por favor...");
-				},
+				data:{id:localStorage.getItem("id")},
 				success:  function (data) {
 					alert(data);
 						$( "#resultado" ).append(data);
