@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Untitled Document</title>
+<script src="../js/jquery.min.js"></script>
+<script>
+$.ajax({
+	url:   'http://storybox.mx/clientes/md/conect/update.php',
+	type:  'get',
+	data:{id:4},
+	beforeSend: function () {
+			$("#resultado").html("Procesando, espere por favor...");
+	},
+	success:  function (data) {
+		alert(data);
+			$( "#resultado" ).append(data);
+	}
+});
+</script>
+
+</head>
+
+<body>
+<div id="#resultado"></div>
+</body>
+</html>

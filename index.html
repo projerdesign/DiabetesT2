@@ -13,27 +13,45 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="cordova.js"></script>
 	<script>
-	
-	document.addEventListener("deviceready", onDeviceReady, false);
-	
-	window.plugins.uniqueDeviceID.get(success, fail);
-		function success(uuid)
-		{
-			alert('run');
-			alert(uuid);
-		};
-	
+	document.addEventListener("deviceready", onDeviceReady, false);	
 	function onDeviceReady() {
 		if (typeof(Storage) != "undefined") {
 		// Store
 		$valoractual = localStorage.getItem("open-app");
+		$id = localStorage.getItem("id");
     	// Retrieve
-    	if($valoractual == null){
+    	if(($valoractual == null)&&($id == null)){
+			$.ajax({
+				url:   'http://storybox.mx/clientes/md/conect/new.php',
+				type:  'post',
+				beforeSend: function () {
+						$("#resultado").html("Procesando, espere por favor...");
+				},
+				success:  function (data) {
+						var iduser = (data);
+						localStorage.setItem("id", iduser);
+						$nuevousr = localStorage.getItem("id");
+				}
+			});
 			localStorage.setItem("open-app", "1");
 			$nuevo = localStorage.getItem("open-app");
+			
+			
 		}else{
 			$nuevo = ++$valoractual;
 			localStorage.setItem("open-app", $nuevo);
+			$.ajax({
+				url:   'http://storybox.mx/clientes/md/conect/update.php',
+				type:  'get',
+				data:{id:id},
+				beforeSend: function () {
+						$("#resultado").html("Procesando, espere por favor...");
+				},
+				success:  function (data) {
+					alert(data);
+						$( "#resultado" ).append(data);
+				}
+			});
 		}
 		
 		} else {
@@ -45,6 +63,7 @@
 </head>
 
 <body>
+<h2 id="#resultado"></h2>
 
 </body>
 </html>

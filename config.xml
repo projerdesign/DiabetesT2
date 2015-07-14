@@ -3,7 +3,7 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     	id = "com.projerdesigns.diabetesT2"
         versionCode = "10" 
-        version     = "1.2.6" >
+        version     = "1.2.7" >
 
     <!-- versionCode is optional and Android only -->
 	<preference name="phonegap-version" value="3.7.0" />
@@ -16,6 +16,8 @@
 
 <access origin="http://projerdesign.com/clientes/md"/>
 <access uri="http://projerdesign.com/clientes/md" />
+<access origin="http://storybox.mx/clientes/md"/>
+<access uri="http://storybox.mx/clientes/md" />
 
 <description>
 DiabetesT2
@@ -26,7 +28,6 @@ Projer Designs
 </author>
 
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
-	<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" version="1.2.0" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.geolocation" />
 	<gap:plugin name="org.apache.cordova.dialogs" />
