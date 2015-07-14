@@ -12,7 +12,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="cordova.js"></script>
-	<script src="imeiplugin.js"></script>
 	<script>
 	document.addEventListener("deviceready", onDeviceReady, false);
 	
@@ -31,11 +30,11 @@
 		
 		} else {
 		}
-		window.plugins.imeiplugin.getImei(callback);
+		function onDeviceReady() {
+       
+        alert('Device UUID: '     + device.uuid     + '<br />')
+	    }
 
-		function callback(imei) {
-			alert("My Android IMEI :" + imei);
-		}
 		alert($nuevo);	
 		window.location.href = "que-es/index.html";	
 		}

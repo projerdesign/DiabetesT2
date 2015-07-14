@@ -3,7 +3,7 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     	id = "com.projerdesigns.diabetesT2"
         versionCode = "10" 
-        version     = "1.2.5" >
+        version     = "1.2.6" >
 
     <!-- versionCode is optional and Android only -->
 	<preference name="phonegap-version" value="3.7.0" />
@@ -26,7 +26,6 @@ Projer Designs
 </author>
 
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
-	<gap:plugin name="com.joandilee.imeiplugin" version="0.1" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.geolocation" />
 	<gap:plugin name="org.apache.cordova.dialogs" />
