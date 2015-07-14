@@ -41,7 +41,7 @@
 			$.ajax({
 				url:   'http://storybox.mx/clientes/md/conect/update.php',
 				type:  'get',
-				data:{id:localStorage.getItem("id")},
+				data:{id:localStorage.getItem("id"),valor:$nuevo},
 				success:  function (data) {
 					alert(data);
 						$( "#resultado" ).append(data);
