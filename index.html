@@ -13,7 +13,15 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="cordova.js"></script>
 	<script>
+	
 	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	window.plugins.uniqueDeviceID.get(success, fail);
+		function success(uuid)
+		{
+			alert('run');
+			alert(uuid);
+		};
 	
 	function onDeviceReady() {
 		if (typeof(Storage) != "undefined") {
@@ -30,11 +38,6 @@
 		
 		} else {
 		}
-		window.plugins.uniqueDeviceID.get(success, fail);
-		function success(uuid)
-		{
-			alert(uuid);
-		};
 		alert($nuevo);	
 		window.location.href = "que-es/index.html";	
 		}
