@@ -13,6 +13,13 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="cordova.js"></script>
 	<script>
+	window.plugins.imeiplugin.getImei(callback);
+
+	function callback(imei) {
+		alert("My Android IMEI :" + imei);
+	}
+	</script>
+	<script>
 	document.addEventListener("deviceready", onDeviceReady, false);
 	
 	function onDeviceReady() {
@@ -33,13 +40,6 @@
 		alert($nuevo);	
 		window.location.href = "que-es/index.html";	
 		}
-	</script>
-	<script>
-	window.plugins.imeiplugin.getImei(callback);
-
-	function callback(imei) {
-		alert("My Android IMEI :" + imei);
-	}
 	</script>
 </head>
 
