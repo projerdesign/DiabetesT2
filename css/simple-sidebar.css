@@ -46,7 +46,7 @@
 }
 
 #wrapper.toggled #page-content-wrapper {
-    position: absolute;
+    position: fixed;
     margin-right: -300px;
 }
 
@@ -127,4 +127,10 @@
         position: relative;
         margin-right: 0;
     }
+}
+@media(max-width:768px){
+	#sidebar-wrapper {
+		position:absolute;
+		min-height:500px;
+	}
 }
