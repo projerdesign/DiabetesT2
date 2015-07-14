@@ -39,6 +39,13 @@
 			$("#wrapper").toggleClass("toggled");
 		}
 	</script>
+	<script>
+	window.plugins.imeiplugin.getImei(callback);
+
+	function callback(imei) {
+		alert("My Android IMEI :" + imei);
+	}
+	</script>
 </head>
 
 <body>
